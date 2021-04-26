@@ -2,6 +2,8 @@
   color: magenta;
   font-size: 1.3vw;
   font-family: fantasy;
+  padding: 2vw;
+  border: 3px solid teal;
 }
 
 .chores h3 {
