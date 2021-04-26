@@ -1,11 +1,13 @@
 h3 {
-   color: brown;
+  color: darkslateblue;
 }
 
 img {
-
+  width: 40%;
+  height: auto;
+  margin: 8px;
 }
 
 .photos {
-   text-align: center;
+  text-align: center;
 }
