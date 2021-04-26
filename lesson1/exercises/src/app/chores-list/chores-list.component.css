@@ -1,0 +1,13 @@
+.chores {
+  color: magenta;
+  font-size: 1.3vw;
+  font-family: fantasy;
+}
+
+.chores h3 {
+  text-decoration: underline;
+}
+
+.chores li {
+  font-style: italic;
+}
