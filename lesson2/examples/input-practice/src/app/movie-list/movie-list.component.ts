@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movie-list.component.css']
 })
 export class MovieListComponent implements OnInit {
-  movies = ['Toy Story', 'The Shining', 'Sleepless in Seattle', 'The Martian'];
+  movies = ['Toy Story   ', 'The Shining', 'Sleepless in Seattle', 'The Martian'];
 
   constructor() { }
 
@@ -14,8 +14,9 @@ export class MovieListComponent implements OnInit {
   }
 
   addMovie (newTitle: string) {
-    if (!this.movies.includes(newTitle)) {
-      this.movies.push(newTitle);
+    let standardize: string[] = this.movies.map(str => str.toLowerCase().trim());
+    if (!standardize.includes(newTitle.toLowerCase().trim()) && newTitle.trim() !== "") {
+      this.movies.push(newTitle.trim());
     }
   }
 
